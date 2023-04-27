@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .link {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Адаптация шапки для маленьких экранов */
+  @media (max-width: 767px) {
+    .header {
+      flex-direction: column;
+    }
+    .nav {
+      width: 100%;
+      text-align: center;
+    }
+    .list {
+      flex-direction: column;
+    }
+    .item {
+      padding: 5px 0;
+      margin: 0 !important;
+    }
+  }
+  
+  /* Адаптация шапки для средних экранов */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .header {
+      font-size: 18px;
+    }
+  }
+  
+  /* Адаптация шапки для больших экранов */
+  @media (min-width: 992px) {
+    .header {
+      font-size: 20px;
+    }
+  }
+  

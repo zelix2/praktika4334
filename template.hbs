@@ -1,0 +1,12 @@
+<header class="header">
+  <img class="logo" src="{{logo}}" alt="logo" />
+  <nav class="nav">
+    <ul class="list">
+      {{#each navLinks}}
+      <li class="item">
+        <a href="{{url}}" class="link"> {{label}} </a>
+      </li>
+      {{/each}}
+    </ul>
+  </nav>
+</header>
